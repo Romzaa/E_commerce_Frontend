@@ -1,0 +1,168 @@
+.myMain {
+    margin: 0px;
+    padding-top: 0%;
+    min-height: 100%;
+    transition: 1s ease;
+}
+
+@keyframes scale {
+    0% {}
+
+    50% {
+        scale: 115%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+
+
+}
+
+@keyframes nav {
+    0% {}
+
+
+    50% {
+        scale: 300%;
+        transform: rotateY(180deg) translateY(25%);
+
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+.productImg {
+    transition: 1s ease;
+    border-radius: 25px;
+    position: relative;
+    z-index: 5;
+}
+
+@media (min-width : 1021px) {
+    .productImg:hover {
+        transform: scale(1.8) translateY(20%) translateX(35%);
+    }
+
+}
+
+@media (max-width : 1020px) {
+    .productImg:hover {
+        transform: scale(1.5) translateY(11%) translateX(15%);
+    }
+
+}
+
+@media(max-width : 800px) {
+    .productImg:hover {
+        transform: scale(1.5) translateY(11%) translateX(12%);
+    }
+}
+
+
+@media(max-width : 400px) {
+    .productImg:hover {
+        transform: scale(1.5) translateY(11%);
+    }
+
+}
+
+.btnAnimate {
+    border: none;
+    animation: scale 1.5s ease-in-out infinite;
+}
+
+.bgCard {
+    background-color: #2b2c36;
+    color: aliceblue;
+    box-shadow: 0px 2px 14px rgb(71, 71, 71);
+}
+
+.barShadow {
+    box-shadow: 0px 2px 8px rgb(107, 105, 105);
+    border: none;
+}
+
+.navlogo {
+    width: 55px;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+
+}
+
+.cartSpan {
+    font-size: 0.7rem !important;
+    top: 12px !important;
+    right: -10px !important;
+}
+
+.navlogo:hover {
+    animation: nav 3s ease-in-out;
+}
+
+.bgNav {
+    background-color: #2b2c36;
+}
+
+.myNav {
+    opacity: 30%;
+    min-height: 250px;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.myNav:hover {
+    opacity: 100%;
+    z-index: 2;
+    ;
+}
+
+.myText {
+    white-space: nowrap;
+}
+
+.alertBox {
+    z-index: 2000;
+    top: -60px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.alertBoxShow {
+    transform: translateY(90px);
+    opacity: 1;
+
+}
+
+.alertBoxHide {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+.button-addon2 {
+    z-index: 0;
+}
+
+.button-addon2:focus {
+    z-index: 0;
+}
+
+.adminNav {
+    opacity: 0.3;
+    z-index: 0;
+    transition: 0.5s ease;
+
+}
+
+.adminNav:hover {
+    opacity: 1;
+    z-index: 10;
+}
+.adminNav:active {
+    opacity: 1;
+    z-index: 10;
+}
